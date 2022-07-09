@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="nblite.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>NBLite Code Demo</title>
+  </head>
+  
+  <body> 
+    <div id="nb-selector" class="container">
+        <form action="index.html" method="GET">
+            <label for="fname">URL to Notebook:</label>
+            <input type="text" id="url" name="url" required
+                value="./sample/sample.ipynb"
+            >
+            <input type="submit" value="Submit" style="display: inline;">
+        </form>
+
+        <h3>Samples</h3>
+
+        <p><a href="?url=./sample/sample.ipynb">Sample Notebook</a></p>
+        <p><a href="?url=./sample/handson_ml_chapter_1.ipynb">Hands on Machine Learning Chapter 1</a> (from <a href="https://github.com/ageron/handson-ml2/blob/master/01_the_machine_learning_landscape.ipynb" target="_blank">here</a>)</p>
+    </div>
+
+    <div id="nb-content" class="container">
+
+    </div>
+    <p class="container" style="text-align: center;">
+      Original Author: <a href="https://gitlab.com/eduardobonet/nblite" target="_blank">Minimalistic notebooks in the browser</a>
+    </p >
+  </body>
+</html>
